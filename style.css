@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #333;
+}
+
+header {
+    background: #243b55;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.form-container {
+    width: 90%;
+    max-width: 550px;
+    background: white;
+    margin: 35px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #243b55;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 85px;
+    resize: vertical;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #243b55;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 25px;
+    background: #243b55;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #426b91;
+}
+
+.result {
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+.result h2 {
+    color: green;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.result > p {
+    text-align: center;
+}
+
+.details {
+    background: #f2f5fa;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 8px;
+}
+
+.details h3 {
+    margin-bottom: 15px;
+    color: #243b55;
+}
+
+.details p {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    overflow-wrap: anywhere;
+}
+
+.back {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    color: #243b55;
+}
+
+.error {
+    background: #ffe5e5;
+    color: #b00020;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #141e30;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+@media(max-width: 600px) {
+    .form-container, .result {
+        padding: 20px;
+    }
+}
+
+@media print {
+    header, footer, .result button, .back {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    .result {
+        box-shadow: none;
+    }
+}
